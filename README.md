@@ -1,5 +1,5 @@
 ## 🚀 Benchmark Tasks & Demonstration
-The following tasks are demonstrated in the [Demo Video Link]:
+The following tasks are demonstrated in the [Demo Video Link]: https://youtu.be/ODrNZ7Z5DMQ
 
 ### **Task A: Persona (System Prompt)**
 - **Input:** `"Who are you?"`
@@ -22,3 +22,14 @@ The following tasks are demonstrated in the [Demo Video Link]:
 ### **Task E: Robustness (Error Handling)**
 - **Input:** `"What is the price of GOOG?"`
 - **Result:** Handles unknown data gracefully by returning a **polite error message**.
+
+---
+
+## 💻 Local LLM Configuration
+To optimize performance for this agent on local hardware (NVIDIA RTX 4050 LAPTOP 6GB VRAM), the following configuration was used:
+
+* **Inference Engine:** [Ollama](https://ollama.com/)
+* **Primary Model:** `mistral-nemo` (12B parameters) - Chosen for its superior function-calling accuracy and context retention compared to smaller models.
+* **Context Handling:** Adjusted System Prompts to reduce "hallucinations" regarding user identity and memory tasks.
+
+---
